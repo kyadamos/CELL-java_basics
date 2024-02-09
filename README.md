@@ -123,10 +123,47 @@ public class Main {
 
 ### Classes in Java
 
+Essentially, classes are pieces of code that represent a group of related objects. These objects are related to each other by a set of shared attributes and behaviors. For instance, if we were to create a dog class, then some attributes we could assign to the class are: its breed, fur color, age, etc. Barking or running would be some behaviors that it may have.
+
+Ex 1:
+```java
+public Dog (double age, String color, String breed)
+    this.age = age;
+    this.color = color;
+    this.breed = breed;
+
+    public String bark() {
+        System.out.println("woof");
+    }
+```
+
 #### Constructors in Java
+Instances are objects created from a class. Constructors are functions of a class used to create instances of that class. 
+
+Ex 2:
+```java
+Dog myDog = new Dog(2.5, "blonde", "border terrier")
+Dog yourDog = new Dog(3, "black", "husky")
+```
+
+In example 2, we instantiate two dogs and initialize their attributes with their respective values.
 
 ### Instance vs. Class
 
 #### Instance Methods vs. Class Methods
+To call methods of an instance, use the dot operator on the instance, followed by the desired method to call and parentheses.
+
+Ex 3:
+```java
+myDog.bark();
+```
 
 #### Instance Variables vs. Class Variables
+Instance variables are also accessed using the dot operator on the instance.
+
+Ex 4:
+```java
+myDog.breed
+```
+
+In `.\iteration_work\final_demo`, we have a `StudentProfile` class with the `expectedYearToGraduate` attribute. The class also has a `incrementExpectedYearToGraduate` method, which reassigns the instance's `expectedYearToGraduate` to its value incremented by 1.
